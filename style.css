@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --font-h: "Bebas Neue", Arial, sans-serif;
+  --font-t: "Montserrat", Arial, sans-serif;
+
+  --c-1: #333333;
+  --c-2: #191919;
+  --c-3: #ffffff;
+}
+
+body {
+  background-color: var(--c-2);
+}
+
+main {
+  padding: 5rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  color: var(--c-3);
+  font-size: 2rem;
+  font-family: var(--font-t);
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.name2,
+.film {
+  color: var(--c-2);
+  font-family: var(--font-t);
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  border: 3px solid var(--c-2);
+  z-index: 4;
+  background-color: var(--c-3);
+  width: 600px;
+  max-width: 80%;
+}
+
+.modal.active {
+  display: initial;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.modal-header .close {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--c-2);
+}
+
+#overlay {
+  position: fixed;
+  /*  opacity: 0; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 25, 25, 0.95);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
