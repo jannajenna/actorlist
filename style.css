@@ -32,6 +32,7 @@ li {
   font-size: 2rem;
   font-family: var(--font-t);
   text-transform: uppercase;
+  cursor: pointer;
   padding: 1rem;
 }
 
@@ -49,7 +50,7 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  /* display: none; */
   border: 3px solid var(--c-2);
   z-index: 4;
   background-color: var(--c-3);
@@ -57,10 +58,10 @@ li {
   max-width: 80%;
 }
 
-.modal.active {
+/* .modal.active {
   display: initial;
 }
-
+ */
 .modal-header {
   display: flex;
   justify-content: flex-end;
@@ -80,7 +81,7 @@ li {
 
 #overlay {
   position: fixed;
-  /*  opacity: 0; */
+  opacity: 0;
   top: 0;
   left: 0;
   right: 0;
