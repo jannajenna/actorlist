@@ -11,17 +11,11 @@ fetch("./actors.json")
 function actorCinema(data) {
   console.log(data);
   data.forEach(showInfo);
-  /*  const template = document.querySelector("template");
-  const clone = template.cloneNode(true);
-
-  clone.querySelector("fullname").textContent = information.fullname;
-
-  document.querySelector("main").appendChild(clone); */
 }
 
 function showInfo(info) {
-  const template = document.querySelector("template").content;
-  const clone = template.cloneNode(true);
+  const template1 = document.querySelector(".template1").content;
+  const clone = template1.cloneNode(true);
 
   clone.querySelector(".fullname").textContent = info.fullname;
 
