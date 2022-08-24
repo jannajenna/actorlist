@@ -8,7 +8,7 @@
   --font-h: "Bebas Neue", Arial, sans-serif;
   --font-t: "Montserrat", Arial, sans-serif;
 
-  --c-1: #333333;
+  --c-1: #848484;
   --c-2: #191919;
   --c-3: #ffffff;
 }
@@ -19,7 +19,13 @@ body {
 
 main {
   padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: start;
 }
+
 ul {
   list-style: none;
   display: flex;
@@ -28,12 +34,23 @@ ul {
 }
 
 .name1 {
-  color: var(--c-3);
-  font-size: 2rem;
+  color: var(--c-1);
+  font-size: 1.2rem;
   font-family: var(--font-t);
   text-transform: uppercase;
   cursor: pointer;
   padding: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.example {
+  color: orangered;
+}
+
+.name1:hover {
+  color: var(--c-3);
+  font-weight: 700;
 }
 
 .name2,
