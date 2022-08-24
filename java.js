@@ -1,5 +1,14 @@
 console.log("hej");
 
+fetch("./actors.json")
+  .then(function (resp) {
+    return resp.json();
+  })
+
+  .then(function (data) {
+    console.log(data);
+  });
+
 const modal = document.querySelector(".modal");
 const openModal = document.querySelectorAll(".jopen");
 const closeModal = document.querySelector(".jclose");

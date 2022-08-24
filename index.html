@@ -10,22 +10,23 @@
   <body>
     <header></header>
     <main>
-      <div class="wraper">
-        <ul>
-          <li class="name name1 jopen">Name of actor</li>
-          <li class="name name1 jopen">Name of actor</li>
-        </ul>
-      </div>
-      <dialog class="modal active" id="modal">
-        <div class="modal-header">
-          <button class="close jclose">&times;</button>
+      <template>
+        <div class="wraper">
+          <ul>
+            <li class="fullname name1 jopen">Name of actor</li>
+          </ul>
         </div>
-        <div>
-          <h2 class="name2">Name of Actor</h2>
-          <h2 class="film">Name of Film</h2>
-        </div>
-      </dialog>
-      <div class="ative" id="overlay"></div>
+        <dialog class="modal active" id="modal">
+          <div class="modal-header">
+            <button class="close jclose">&times;</button>
+          </div>
+          <div>
+            <h2 class="fullname name2">Name of Actor</h2>
+            <h2 class="movie film">Name of Movie</h2>
+          </div>
+        </dialog>
+        <div class="ative" id="overlay"></div>
+      </template>
     </main>
     <footer></footer>
     <script src="java.js"></script>
