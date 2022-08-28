@@ -75,10 +75,10 @@ ul {
   max-width: 80%;
 }
 
-/* .modal.active {
+.modal.active {
   display: initial;
 }
- */
+
 .modal-header {
   display: flex;
   justify-content: flex-end;
@@ -96,9 +96,9 @@ ul {
   color: var(--c-2);
 }
 
-#overlay {
+.overlay {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -107,7 +107,7 @@ ul {
   pointer-events: none;
 }
 
-#overlay.active {
-  pointer-events: all;
-  opacity: 1;
+.activeo {
+  pointer-events: none;
+  opacity: 0;
 }
